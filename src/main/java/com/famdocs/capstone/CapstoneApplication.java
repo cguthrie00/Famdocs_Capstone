@@ -1,4 +1,4 @@
-package com.famdox.capstone;
+package com.famdocs.capstone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
