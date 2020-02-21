@@ -1,4 +1,4 @@
-package com.famdox.capstone.core;
+package com.famdocs.capstone.core;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -13,12 +13,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
-
+    @Entity
     @Table(name="QUOTE")
     @XmlRootElement(name="quote")
     public class Quote implements Serializable {
         @Id
         @GeneratedValue(strategy= GenerationType.IDENTITY)
+        @Column(name="ID")
+
+        private int id;
         @Column(name="QUOTE")
 
         private String quote;
@@ -33,18 +36,18 @@ import javax.xml.bind.annotation.XmlRootElement;
         public Quote() {
             super();
         }
-        public Quote(String quote, String genre, String source, String date) {
+        public Quote(int id, String quote, String genre, String source, String date) {
             super();
+            this.id = id;
             this.quote = quote;
             this.genre = genre;
             this.source = source;
             this.date = date;
         }
-        public String getQuote() {
-            return quote;
+        public int getId() {
+            return id;
         }
-        public void setQuote(String quote) {
-            this.quote = quote;
+        public void setId(int id) {
         }
         public String getGenre() {
             return genre;
@@ -67,10 +70,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 
         @Override
         public String toString() {
-            return "Quote [Quote=" + quote + ", genre=" + genre + ", source=" + source
+            return "Quote [ID= " + id + "Quote=" + quote + ", genre=" + genre + ", source=" + source
                     + ", date=" + date + "]";
         }
-
 
     }
 
