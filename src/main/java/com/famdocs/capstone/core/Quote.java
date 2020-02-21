@@ -44,11 +44,11 @@ import javax.xml.bind.annotation.XmlRootElement;
             this.source = source;
             this.date = date;
         }
+        public String getQuote(){return quote;}
         public int getId() {
             return id;
         }
-        public void setId(int id) {
-        }
+        public void setId(int id) { }
         public String getGenre() {
             return genre;
         }
