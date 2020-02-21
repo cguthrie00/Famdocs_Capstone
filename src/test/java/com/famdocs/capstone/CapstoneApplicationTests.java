@@ -10,4 +10,9 @@ class CapstoneApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void getQuote() {
+
+	}
+
 }

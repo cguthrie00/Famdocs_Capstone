@@ -1,4 +1,4 @@
-package com.famdox.capstone;
+package com.famdocs.capstone;
 
 public class QuoteController {
 }
