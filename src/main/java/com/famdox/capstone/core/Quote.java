@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.XmlRootElement;
         public Quote() {
             super();
         }
-        public HealthPlan(String quote, String genre, String source, String date) {
+        public Quote(String quote, String genre, String source, String date) {
             super();
             this.quote = quote;
             this.genre = genre;
@@ -67,12 +67,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
         @Override
         public String toString() {
-            return "HealthPlan [id=" + id + ", zip=" + zip + ", name=" + name
-                    + ", deductableIndividual=" + deductableIndividual
-                    + ", deductableFamily=" + deductableFamily
-                    + ", outOfPocketIndividual=" + outOfPocketIndividual
-                    + ", outOfPocketFamily=" + outOfPocketFamily + ", copay="
-                    + copay + "]";
+            return "Quote [Quote=" + quote + ", genre=" + genre + ", source=" + source
+                    + ", date=" + date + "]";
         }
 
 
