@@ -70,7 +70,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
         @Override
         public String toString() {
-            return "Quote [ID= " + id + "Quote=" + quote + ", genre=" + genre + ", source=" + source
+            return "Quote [ID= " + id + " Quote=" + quote + ", genre=" + genre + ", source=" + source
                     + ", date=" + date + "]";
         }
 

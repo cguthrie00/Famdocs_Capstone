@@ -16,15 +16,13 @@ public class CmdLineRunner implements CommandLineRunner {
     @Override @Transactional
     public void run(String... args) throws Exception {
       Quote [] quotes = {
-              new Quote(null,"6666","555","999"),
-              new Quote(null,"77","555","227"),
-
+              new Quote(0,"yeah whats up","555","999", "444"),
+              new Quote(0,"heyyyy","555","227", "4324")
       };
         for (Quote quote:
             quotes ) {
             em.persist(quote);
         }
-
 
 
         em.createQuery("FROM Quote").getResultList().stream().forEach(System.out::println);
