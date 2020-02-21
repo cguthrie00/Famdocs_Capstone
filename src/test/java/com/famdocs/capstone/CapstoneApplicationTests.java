@@ -14,5 +14,4 @@ class CapstoneApplicationTests {
 	void getQuote() {
 
 	}
-
 }
