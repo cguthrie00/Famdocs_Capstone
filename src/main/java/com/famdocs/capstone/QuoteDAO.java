@@ -1,5 +1,7 @@
 package com.famdocs.capstone;
 
+import com.famdocs.capstone.core.Quote;
+
 import java.util.List;
 
 public interface QuoteDAO {

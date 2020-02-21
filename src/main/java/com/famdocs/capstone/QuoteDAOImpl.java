@@ -1,5 +1,6 @@
 package com.famdocs.capstone;
 
+import com.famdocs.capstone.core.Quote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -36,7 +37,7 @@ public class QuoteDAOImpl implements QuoteDAO{
     public void add(Quote quote) {
 
         String sql = "INSERT INTO QUOTE (QUOTE, GENRE, SOURCE, DATE, ERA)";
-        template.update(sql, new Object[]{quote.getQuote(), quote.getGenre(), quote.getSource(), quote.getDate(), quote.getEra()});
+        template.update(sql, new Object[]{quote.getQuote(), quote.getGenre(), quote.getSource(), quote.getDate()});
 
     }
 }
